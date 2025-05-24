@@ -79,25 +79,25 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **Scenario A7: Geostationary Orbit (GEO)**
 
-  * **Task:** Adjust SMA, ECC, INC parameters to achieve an orbit as close as possible to geostationary (period \~23h 56m 4s, ECC ≈ 0, INC ≈ 0).
-      * SMA ≈ `42164 km`
-      * ECC ≈ `0`
-      * INC ≈ `0 deg`
+  * **Task:** Adjust SMA, ECC, INC parameters to achieve an orbit as close as possible to geostationary (period \~23h 56m 4s, ECC = 0, INC = 0).
+      * SMA = `42164 km`
+      * ECC = `0`
+      * INC = `0 deg`
   * **Questions:** Why are GEO orbits crucial for telecommunications? What does the ground track of an ideal GEO orbit look like? What happens to the track with a non-zero inclination (inclined geosynchronous orbit)?
 
 **Scenario A8: Molniya Orbit (HEO)**
 
   * **Parameters:**
-      * SMA ≈ `26560 km` (period \~12h)
-      * ECC ≈ `0.74`
-      * INC ≈ `63.4 deg`
-      * AOP ≈ `270 deg` (apoapsis over the northern hemisphere)
+      * SMA = `26560 km` (period \~12h)
+      * ECC = `0.74`
+      * INC = `63.4 deg`
+      * AOP = `270 deg` (apoapsis over the northern hemisphere)
       * RAAN = `0 deg`, TA = `0 deg`
   * **Questions:** What is the characteristic feature of this orbit regarding the satellite's dwell time over specific Earth regions? Why is the `63.4 deg` inclination "critical" for such orbits?
 
 **Scenario A9: Sun-Synchronous Orbit (SSO)**
 
-  * **Parameters:** SMA ≈ `7071 km` (altitude approx. 700 km), ECC ≈ `0.001`.
+  * **Parameters:** SMA = `7071 km` (altitude approx. 700 km), ECC = `0.001`.
   * **Task:** Select an appropriate inclination (usually `97-99 deg`, retrograde orbit). If possible in GMAT, demonstrate RAAN precession (may require longer propagation time and an appropriate force model).
   * **Questions:** What are the advantages of an SSO orbit for Earth observation missions (e.g., consistent lighting conditions)? What does "sun-synchronous" mean?
 
