@@ -1,0 +1,3 @@
+[submodule "dependencies/TLE2nadir"]
+	path = dependencies/TLE2nadir
+	url = https://github.com/yasiupl/TLE2nadir
