@@ -1,0 +1,29 @@
+name: Generate PDFs from MD files in the repository
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '**.md'
+  pull_request:
+    paths: 
+      - '**.md'
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-22.04
+    container: pandoc/latex:latest
+    steps:
+      - name: Run Pandoc
+        env:
+          GIT_TOKEN: ${{ secrets.PDF_GIT_TOKEN }}
+        run: |
+          apk update && apk add bash && apk add git && apk add openssh
+          git clone https://$GIT_TOKEN@github.com/radiosar/config.git
+          cd config
+          find . -name "*.md" | xargs -I{} -t sh -c 'pandoc "{}" -V geometry:margin=1in -V colorlinks=true -V linkcolor=blue -V urlcolor=blue -V toccolor=gray -f markdown+rebase_relative_paths -f markdown+lists_without_preceding_blankline --standalone --output ./pdf/$(echo {} | sed -E "s#.*/([^/]+)/README\.md#\1#; t; s#.*/README\.md#readme#").pdf'
+          git config --global user.email "contact@yasiu.pl"
+          git config --global user.name "yasiu"
+          git add pdf
+          git commit -m "Update pdf instructions"
+          git push
