@@ -11,20 +11,20 @@ The main objective of this laboratory is to familiarize students with the fundam
       * An advanced, open-source software developed by NASA.
       * Used for designing, optimizing, and analyzing space mission trajectories, from Earth orbits to interplanetary missions.
       * Enables precise modeling of forces acting on a spacecraft, orbit propagation, and maneuver analysis.
-      * More information: https://software.nasa.gov/software/GSC-17177-1
+      * More information: [https://software.nasa.gov/software/GSC-17177-1](https://software.nasa.gov/software/GSC-17177-1)
 
   * **VTS Timeloop:**
 
       * Professional software for dynamic 3D visualization of space missions.
       * Allows for the creation of interactive scenarios, import of mission data (including CCSDS formats), and visualization of trajectories, satellite orientations, sensor coverage, and other key mission aspects.
       * Aids in better understanding mission dynamics and effective presentation of analysis results.
-      * More information: https://timeloop.fr/vts/
+      * More information: [https://timeloop.fr/vts/](https://timeloop.fr/vts/)
 
   * **TLE2nadir:**
       
       * VTS Timeloop generator plugin to generate a nadir-pointing vector for sensor visualisation.
       * Orients the spacecraft to point towards earth.
-      * More information: https://github.com/yasiupl/TLE2nadir 
+      * More information: [https://github.com/yasiupl/TLE2nadir](https://github.com/yasiupl/TLE2nadir)
 
 ## 3\. General Laboratory Procedure
 
@@ -66,7 +66,7 @@ Detailed requirements for laboratory grading and report preparation will be prov
 
 ## 6\. Additional Materials
 
-  * **Detailed software operation manual:** [MANUAL.md](MANUAL.md)
+  * **Detailed software operation manual:** [MANUAL_GMAT.md](MANUAL_GMAT.md) and [MANUAL_VTS.md](MANUAL_VTS.md)
   * **Set of mission scenarios for implementation:** [SCENARIOS.md](SCENARIOS.md)
 
 We wish you fruitful work\!

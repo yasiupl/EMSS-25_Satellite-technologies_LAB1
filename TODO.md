@@ -1,3 +1,3 @@
-- [ ] Update VTS Timeloop instruction
-- [ ] Add instruction for TLE2nadir plugin
-- [ ] Add instruction for GMAT CCSDS_OEM import in VTS or usage of TLE2CCSDS plugin in VTS timeloop.
+- [x] Update VTS Timeloop instruction
+- [x] Add instruction for TLE2nadir plugin
+- [x] Add instruction for GMAT CCSDS_OEM import in VTS or usage of TLE2CCSDS plugin in VTS timeloop.
