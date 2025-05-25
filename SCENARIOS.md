@@ -162,7 +162,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
   * **Sensor(s):**
       * Optical: Telescope with a specific field of view for object detection.
       * Radar (optional, conceptual): Radar with a defined range and "field of regard."
-  * **Visualization Tasks:** Show how the satellite's sensor can scan space for objects. What are the challenges in detecting small objects? Which orbits are the most "crowded"? (This last question may require additional information or a simplified representation of the debris population in VTS, if possible).
+  * **Visualization Tasks:** Show how the satellite's sensor can scan space for objects. What are the challenges in detecting small objects? Which orbits are the most "crowded"?
 
 -----
 
