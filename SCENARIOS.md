@@ -35,6 +35,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **Scenario A2: Effect of Semi-Major Axis (SMA)**
 
+  * **Base Parameters:** INC = `51.6 deg`, RAAN = `0 deg`, AOP = `0 deg`, TA = `0 deg`.
   * Maintain ECC, INC, RAAN, AOP, TA as in A1. Only change SMA:
       * a) SMA = `6771 km` (LEO, alt. \~400 km)
       * b) SMA = `26560 km` (MEO, GPS-like orbit)
@@ -43,7 +44,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **Scenario A3: Effect of Eccentricity (ECC)**
 
-  * **Base Parameters:** SMA = `7500 km`, INC = `28.5 deg`, RAAN = `0 deg`, AOP = `0 deg`, TA = `0 deg`.
+  * **Base Parameters:** SMA = `42164 km`, INC = `0 deg`, RAAN = `0 deg`, AOP = `0 deg`, TA = `0 deg`.
   * Vary ECC:
       * a) ECC = `0.005` (nearly circular)
       * b) ECC = `0.1`
@@ -70,7 +71,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **Scenario A6: Effect of Argument of Periapsis (AOP)**
 
-  * **Base Parameters:** SMA = `7500 km`, ECC = `0.2` (elliptical orbit), INC = `51.6 deg`, RAAN = `0 deg`, TA = `0 deg`.
+  * **Base Parameters:** SMA = `6971 km`, ECC = `0.001`, INC = `51.6 deg`, RAAN = `0 deg`, TA = `0 deg`.
   * Vary AOP:
       * a) AOP = `0 deg`
       * b) AOP = `90 deg`
@@ -98,7 +99,8 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 **Scenario A9: Sun-Synchronous Orbit (SSO)**
 
   * **Parameters:** SMA = `7071 km` (altitude approx. 700 km), ECC = `0.001`.
-  * **Task:** Select an appropriate inclination (usually `97-99 deg`, retrograde orbit). If possible in GMAT, demonstrate RAAN precession (may require longer propagation time and an appropriate force model).
+  * **Task:** Select an appropriate inclination (usually `97-99 deg`, retrograde orbit). If possible in GMAT, demonstrate RAAN precession (may require longer propagation time (`MySat.ElapsedDays  
+   `) and enabled force model).
   * **Questions:** What are the advantages of an SSO orbit for Earth observation missions (e.g., consistent lighting conditions)? What does "sun-synchronous" mean?
 
 **Scenario A10: Effect of Atmospheric Drag on LEO**
