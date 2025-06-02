@@ -68,6 +68,8 @@ The following outlines a typical workflow for creating a new mission.
 
   ![](img/gmat_propagate.png)
 
+  Make sure that the `ElapsedSecs` condition is equal to `86400` seconds (24 hours) or change the end condition to `ElapsedDays` and set it to `1`.
+
 3. When you click the button in bottom-left corner (`Show Script`) or click `F7` on your keyboard, you will see the code equivalent of the Propagator. Something like this:
     ```gmat
     Propagate DefaultProp(MySat) {MySat.ElapsedSecs = 86400.0}; // Propagate for 86400 seconds (1 day)
@@ -100,7 +102,7 @@ The following outlines a typical workflow for creating a new mission.
   * **`GroundTrackPlot` (Ground Track Plot):**
 
     1.  Similar to `OrbitView`, add an `XYPlot` (or `GroundTrackPlot`).
-    2.  Configure axes: X as `MySat.Earth.Longitude`, Y as `MySat.Earth.Latitude`.
+    2.  Configure axes: X as `MySat.A1ModJulian`, Y as `MySat.Earth.OrbitPeriod`.
 
   * **Exporting Ephemeris Data (e.g., CCSDS OEM):**
 
