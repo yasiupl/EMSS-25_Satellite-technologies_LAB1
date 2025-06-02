@@ -100,7 +100,7 @@ The following outlines a typical workflow for creating a new mission.
   * **`GroundTrackPlot` (Ground Track Plot):**
 
     1.  Similar to `OrbitView`, add an `XYPlot` (or `GroundTrackPlot`).
-    2.  Configure axes: X as `MySat.Earth.Longitude`, Y as `MySat.Earth.Latitude`.
+    2.  Configure axes: X as `MySat.A1ModJulian`, Y as `MySat.Earth.OrbitPeriod`.
 
   * **Exporting Ephemeris Data (e.g., CCSDS OEM):**
 
