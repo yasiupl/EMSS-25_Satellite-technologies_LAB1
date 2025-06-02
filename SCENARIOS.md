@@ -39,7 +39,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
       * a) SMA = `6771 km` (LEO, alt. \~400 km)
       * b) SMA = `26560 km` (MEO, GPS-like orbit)
       * c) SMA = `42164 km` (GEO, geostationary orbit)
-  * **Questions:** How does changing SMA affect the orbital period, satellite velocity, and the area of Earth visible from the satellite (intuitively)? Compare the ground tracks.
+  * **Questions:** How does changing SMA affect the orbital period (`MySat.Earth.OrbitPeriod`), satellite velocity (`MySat.Earth.VMAG`), and the area of Earth visible from the satellite (intuitively)? Compare the ground tracks.
 
 **Scenario A3: Effect of Eccentricity (ECC)**
 
