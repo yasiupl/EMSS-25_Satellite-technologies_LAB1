@@ -12,7 +12,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **For each of the following 10 scenarios:**
 
-1.  Configure a mission in GMAT, modifying the indicated Keplerian parameters. Use an initial date of `01 Jan 2025 12:00:00.000 UTCG` and a spacecraft mass of 1000 kg (unless otherwise specified). Use an Earth gravity model (e.g., JGM-2 20x20) and, if indicated, atmospheric drag (e.g., JacchiaRoberts).
+1.  Configure a mission in GMAT, modifying the indicated Keplerian parameters. Use an initial date of `01 Jan 2025 12:00:00.000 UTCG` and a spacecraft mass of 1000 kg (unless otherwise specified). Use an Earth gravity model (e.g., JGM-2 4x4) and, if indicated, atmospheric drag (e.g., JacchiaRoberts).
 2.  Run the simulation for at least 3 orbits or for 24 hours (unless the scenario suggests otherwise).
 3.  Observe and record in your report:
       * The shape of the orbit in the 3D view (`OrbitView`).
