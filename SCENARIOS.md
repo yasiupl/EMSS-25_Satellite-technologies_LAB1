@@ -12,7 +12,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **For each of the following 10 scenarios:**
 
-1.  Configure a mission in GMAT, modifying the indicated Keplerian parameters. Use an initial date of `01 Jan 2025 12:00:00.000 UTCG` and a spacecraft mass of 1000 kg (unless otherwise specified). Use an Earth gravity model (e.g., JGM-2 20x20) and, if indicated, atmospheric drag (e.g., JacchiaRoberts).
+1.  Configure a mission in GMAT, modifying the indicated Keplerian parameters. Use an initial date of `01 Jan 2025 12:00:00.000 UTCG` and a spacecraft mass of 1000 kg (unless otherwise specified). Use an Earth gravity model (e.g., JGM-2 4x4) and, if indicated, atmospheric drag (e.g., JacchiaRoberts).
 2.  Run the simulation for at least 3 orbits or for 24 hours (unless the scenario suggests otherwise).
 3.  Observe and record in your report:
       * The shape of the orbit in the 3D view (`OrbitView`).
@@ -35,15 +35,16 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **Scenario A2: Effect of Semi-Major Axis (SMA)**
 
+  * **Base Parameters:** INC = `51.6 deg`, RAAN = `0 deg`, AOP = `0 deg`, TA = `0 deg`.
   * Maintain ECC, INC, RAAN, AOP, TA as in A1. Only change SMA:
       * a) SMA = `6771 km` (LEO, alt. \~400 km)
       * b) SMA = `26560 km` (MEO, GPS-like orbit)
       * c) SMA = `42164 km` (GEO, geostationary orbit)
-  * **Questions:** How does changing SMA affect the orbital period, satellite velocity, and the area of Earth visible from the satellite (intuitively)? Compare the ground tracks.
+  * **Questions:** How does changing SMA affect the orbital period (`MySat.Earth.OrbitPeriod`), satellite velocity (`MySat.Earth.VMAG`), and the area of Earth visible from the satellite (intuitively)? Compare the ground tracks.
 
 **Scenario A3: Effect of Eccentricity (ECC)**
 
-  * **Base Parameters:** SMA = `7500 km`, INC = `28.5 deg`, RAAN = `0 deg`, AOP = `0 deg`, TA = `0 deg`.
+  * **Base Parameters:** SMA = `42164 km`, INC = `0 deg`, RAAN = `0 deg`, AOP = `0 deg`, TA = `0 deg`.
   * Vary ECC:
       * a) ECC = `0.005` (nearly circular)
       * b) ECC = `0.1`
@@ -70,7 +71,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **Scenario A6: Effect of Argument of Periapsis (AOP)**
 
-  * **Base Parameters:** SMA = `7500 km`, ECC = `0.2` (elliptical orbit), INC = `51.6 deg`, RAAN = `0 deg`, TA = `0 deg`.
+  * **Base Parameters:** SMA = `42164 km`, ECC = `0.4`, INC = `0 deg`, RAAN = `0 deg`, TA = `0 deg`.
   * Vary AOP:
       * a) AOP = `0 deg`
       * b) AOP = `90 deg`
@@ -98,7 +99,8 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 **Scenario A9: Sun-Synchronous Orbit (SSO)**
 
   * **Parameters:** SMA = `7071 km` (altitude approx. 700 km), ECC = `0.001`.
-  * **Task:** Select an appropriate inclination (usually `97-99 deg`, retrograde orbit). If possible in GMAT, demonstrate RAAN precession (may require longer propagation time and an appropriate force model).
+  * **Task:** Select an appropriate inclination (usually `97-99 deg`, retrograde orbit). If possible in GMAT, demonstrate RAAN precession (may require longer propagation time (`MySat.ElapsedDays  
+   `) and enabled force model).
   * **Questions:** What are the advantages of an SSO orbit for Earth observation missions (e.g., consistent lighting conditions)? What does "sun-synchronous" mean?
 
 **Scenario A10: Effect of Atmospheric Drag on LEO**
