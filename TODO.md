@@ -1,3 +1,9 @@
+## Feedback
+
+It would be better if the classes contain less tasks. Most of the tasks were monotonic  and  time-consuming without special educational value.  I suggest for future preparing short instruction where all dependencies will be explained, and 3-4 more complicated task. For example, to place the satellite on orbit which meet defined requirements. 
+
+## TODOs
+
 - [x] Update VTS Timeloop instruction
 - [x] Add instruction for TLE2nadir plugin
 - [x] Add instruction for GMAT CCSDS_OEM import in VTS or usage of TLE2CCSDS plugin in VTS timeloop.
