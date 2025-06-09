@@ -71,7 +71,7 @@ Below are mission scenarios for implementation within the laboratory using GMAT 
 
 **Scenario A6: Effect of Argument of Periapsis (AOP)**
 
-  * **Base Parameters:** SMA = `6971 km`, ECC = `0.001`, INC = `51.6 deg`, RAAN = `0 deg`, TA = `0 deg`.
+  * **Base Parameters:** SMA = `42164 km`, ECC = `0.4`, INC = `0 deg`, RAAN = `0 deg`, TA = `0 deg`.
   * Vary AOP:
       * a) AOP = `0 deg`
       * b) AOP = `90 deg`
